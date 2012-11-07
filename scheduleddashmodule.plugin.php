@@ -19,7 +19,7 @@ class ScheduledDashModule extends Plugin
 	 */
 	public function filter_block_list($block_list)
 	{
-		$block_list['scheduled_posts'] = _t( 'Latest scheduleds');
+		$block_list['scheduled_posts'] = _t( 'Latest scheduled posts');
 		return $block_list;
 	}
 	
