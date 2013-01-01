@@ -10,6 +10,7 @@ class ScheduledDashModule extends Plugin
 	function action_init()
 	{
 		$this->add_template( 'dashboard.block.scheduled_posts', __DIR__ . '/dashboard.block.scheduled_posts.php' );
+		$this->load_text_domain(__CLASS__);
 	}
 
 	/**
@@ -19,7 +20,7 @@ class ScheduledDashModule extends Plugin
 	 */
 	public function filter_block_list($block_list)
 	{
-		$block_list['scheduled_posts'] = _t( 'Latest scheduled posts');
+		$block_list['scheduled_posts'] = _t( 'Latest scheduled posts', __CLASS__);
 		return $block_list;
 	}
 	

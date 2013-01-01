@@ -5,7 +5,7 @@
 		<li class="item clear">
 			<span class="date pct20 minor"><?php echo $post->pubdate->fuzzy; ?></span>
 			<span class="title pct80"><a href="<?php URL::out('admin', 'page=publish&id=' . $post->id); ?>" title="<?php
-				$post_title = ( $post->title ? $post->title : _t( "[untitled post id: %d]" , array( $post->id ),'draftdashmodule' ) );
+				$post_title = ( $post->title ? $post->title : _t( "[untitled post id: %d]" , array( $post->id ),__CLASS__ ) );
 			printf( _t('Edit \'%s\''), $post_title ); ?>"><?php echo $post_title; ?></a></span>
 		</li>
 		<?php endforeach; ?>
