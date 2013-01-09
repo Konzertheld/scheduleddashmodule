@@ -2,8 +2,6 @@
 
 class ScheduledDashModule extends Plugin
 {
-	private $theme;
-
 	/**
 	 * Add the block template to the theme
 	 */
